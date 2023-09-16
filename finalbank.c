@@ -25,7 +25,7 @@ int main()
    int choice, no, length = 0, m = 0; // no for case a to go back to menu
    float amount;
    char com = 'y';
-   system("COLOR 70");
+   system("COLOR 80");
    printf("\n%20.s-------------------------------------------");
    printf("\n\n\n\n%20.s     WELCOME TO OUR ONLINE BANKING SYSTEM");
    printf("\n\n\n%20.s--------------------------------------------");
@@ -136,7 +136,7 @@ log:
    recheck:
       system("cls");
       fflush(stdin);
-      printf("\n~LOGIN PAGE~\n");
+      printf("\n%15.s~LOGIN SECTION~\n");
       printf("\n%10.sEnter username: ");
       gets(user);
       fflush(stdin);
@@ -172,7 +172,7 @@ log:
             {
             label:
                system("cls");
-               printf("\n Welcome: %s %s", c.name, c.lname);
+               printf("\n Welcome: %s %s!", c.name, c.lname);
                printf("\n\n");
                printf("\n%15.s* Press 1 for balance enquiry ");
                printf("\n%15.s* Press 2 to deposit an amount");
@@ -285,6 +285,13 @@ log:
                   fclose(fp);
                   break;
                case 6:
+		 system("cls");
+                 printf("Thankyou for your cooperation,Bye!");
+                 for(i=0;i<3;i++)
+                 {
+                  printf("!");
+                  sleep(1)
+		  }
                   exit(0);
                default:
                {
