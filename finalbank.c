@@ -43,7 +43,7 @@ log:
    printf("\n%10.s ~~~~~~~~~~~~~~~ MENU ~~~~~~~~~~~~~~~");
    printf("\n%10.s ------------------------------------");
    printf("\n\n%15.s a. Create an account");
-   printf("\n%15.s b. Login ");
+   printf("\n%15.s b. Already a user?Sign in");
    printf("\n%15.s c. Exit");
    fflush(stdin);
    printf("\n\n%15.s Enter your choice:  ");
