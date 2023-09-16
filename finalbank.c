@@ -290,7 +290,7 @@ log:
                  for(i=0;i<3;i++)
                  {
                   printf("!");
-                  sleep(1)
+                  sleep(1);
 		  }
                   exit(0);
                default:
@@ -301,7 +301,7 @@ log:
                }
                }
                printf("\n\nDo you want to continue the transaction?");
-               printf("\nIf yes press 'y' else print 'n':");
+               printf("\nIf yes press 'y' else press 'n':");
                scanf("%s", &com);
             }
          }
